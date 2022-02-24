@@ -27,10 +27,14 @@ const documentReady = () => {
   
   const navMenuIcon = document.querySelector('.header-nav__menu-icon');
   const navCloseIcon = document.querySelector('.header-nav__close-icon');
+  const headerNavLinkItems = [...document.querySelectorAll('.header-nav__link-item')];
   
   window.addEventListener('scroll', headerScroll);
   navMenuIcon.addEventListener('click', openMenu);
   navCloseIcon.addEventListener('click', closeMenu);
+  headerNavLinkItems.map((element) => {
+    element.addEventListener('click', closeMenu);
+  });
   // End header
 };
 

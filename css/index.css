@@ -208,7 +208,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-size: 5rem;
+  font-size: 2.5rem;
   text-shadow:
     0 0 0.5rem var(--primary-theme-color),
     0 0 1rem var(--primary-theme-color),
@@ -251,5 +251,9 @@
 
   .cover__message {
     gap: 2rem;
+  }
+
+  .section {
+    font-size: 5rem;
   }
 }

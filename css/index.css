@@ -2,6 +2,7 @@
   --text-color: #fff;
   --primary-theme-color: #2a5298;
   --secondary-theme-color: #2959ac;
+  --primary-theme-color-transparent: #2a529880;
   --highlight-color: gold;
   --button-color: transparent;
   --inverse-theme-color: #fff;
@@ -15,7 +16,6 @@
 }
 
 .main {
-  background-image: linear-gradient(to top, var(--primary-theme-color), var(--secondary-theme-color));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
 
 .header--scroll {
   background-color: var(--inverse-theme-color);
-  box-shadow: 0 0.125rem 0.125rem 0.125rem var(--inverse-theme-color);
+  box-shadow: 0 0.125rem 0.125rem 0.125rem var(--primary-theme-color-transparent);
 }
 
 .header-nav {
@@ -124,10 +124,11 @@
 }
 
 .cover {
+  background-image: linear-gradient(to top, var(--primary-theme-color), var(--secondary-theme-color));
   min-height: 100vh;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .cover-container {
@@ -194,6 +195,25 @@
 .cover__wave {
   width: 100%;
   height: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../img/cover.svg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 5rem;
+  text-shadow:
+    0 0 0.5rem var(--primary-theme-color),
+    0 0 1rem var(--primary-theme-color),
+    0 0 1.5rem var(--primary-theme-color),
+    0 0 2rem var(--primary-theme-color);
 }
 
 @media (min-width: 854px) {

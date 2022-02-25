@@ -19,16 +19,16 @@ const documentReady = () => {
     const navLinkList = document.querySelector('.header-nav__link-list');
     navLinkList.classList.add('header-nav__link-list--open');
   };
-  
+
   const closeMenu = () => {
     const navLinkList = document.querySelector('.header-nav__link-list');
     navLinkList.classList.remove('header-nav__link-list--open');
   };
-  
+
   const navMenuIcon = document.querySelector('.header-nav__menu-icon');
   const navCloseIcon = document.querySelector('.header-nav__close-icon');
   const headerNavLinkItems = [...document.querySelectorAll('.header-nav__link-item')];
-  
+
   window.addEventListener('scroll', headerScroll);
   navMenuIcon.addEventListener('click', openMenu);
   navCloseIcon.addEventListener('click', closeMenu);
@@ -36,6 +36,24 @@ const documentReady = () => {
     element.addEventListener('click', closeMenu);
   });
   // End header
+
+  // Start modal
+  const coverButton = document.querySelector('.cover__button');
+  const modalButton = document.querySelector('.modal__button');
+  const modal = document.querySelector('.modal');
+
+  const openModal = () => {
+    modal.classList.add('modal--show');
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('modal--show');
+  };
+
+  coverButton.addEventListener('click', openModal);
+
+  modalButton.addEventListener('click', closeModal);
+  // End modal
 };
 
 document.addEventListener('DOMContentLoaded', documentReady);

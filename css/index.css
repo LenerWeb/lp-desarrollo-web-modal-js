@@ -223,7 +223,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  flex-direction: column;
   opacity: 0;
   background-color: var(--primary-theme-color-transparent);
   pointer-events: none;

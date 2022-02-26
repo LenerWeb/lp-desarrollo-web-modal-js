@@ -5,12 +5,12 @@ const documentReady = () => {
     const header = document.querySelector('.header');
     const headerNav = document.querySelector('.header-nav');
     const headerNavMenuIcon = document.querySelector('.header-nav__menu-icon');
-    const headerNavLink = [...document.querySelectorAll('.header-nav__link')];
+    const headerNavLinks = [...document.querySelectorAll('.header-nav__link')];
 
     header.classList.toggle('header--scroll', window.scrollY > 0);
     headerNav.classList.toggle('header-nav--scroll', window.scrollY > 0);
     headerNavMenuIcon.classList.toggle('header-nav__menu-icon--scroll', window.scrollY > 0);
-    headerNavLink.map((element) => {
+    headerNavLinks.map((element) => {
       element.classList.toggle('header-nav__link--scroll', window.scrollY > 0);
     });
   };

@@ -133,11 +133,13 @@
   transition: var(--all-transitions);
 }
 
-.header-nav__link:hover {
+.header-nav__link:hover,
+.header-nav__link--active {
   color: var(--highlight-color);
 }
 
-.header-nav__link:hover::after {
+.header-nav__link:hover::after,
+.header-nav__link--active::after {
   width: 100%;
 }
 

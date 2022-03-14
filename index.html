@@ -2,14 +2,171 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desarrollo Web & Elliot Garamendi</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/index.css">
+
+  <title>Diseño y Desarrollo de Páginas Web & Elliot Garamendi</title>
+  <meta name="title" content="Diseño y Desarrollo de Páginas Web & Elliot Garamendi">
+  <meta name="description"
+    content="Landing Page de Desarrollo Web con Modal para el contacto de clientes. Animaciones, Transiciones, RWD, Mobile First, BEM, Semántica, SEO, Open Graph.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elliotxleo.github.io/lp-desarrollo-web-modal-js/">
+  <meta property="og:title" content="Diseño y Desarrollo de Páginas Web & Elliot Garamendi">
+  <meta property="og:description"
+    content="Landing Page de Desarrollo Web con Modal para el contacto de clientes. Animaciones, Transiciones, RWD, Mobile First, BEM, Semántica, SEO, Open Graph.">
+  <meta property="og:image" content="https://i.postimg.cc/mZ5CjB6B/lp-desarrollo-web-modal-js.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://elliotxleo.github.io/lp-desarrollo-web-modal-js/">
+  <meta property="twitter:title" content="Diseño y Desarrollo de Páginas Web & Elliot Garamendi">
+  <meta property="twitter:description"
+    content="Landing Page de Desarrollo Web con Modal para el contacto de clientes. Animaciones, Transiciones, RWD, Mobile First, BEM, Semántica, SEO, Open Graph.">
+  <meta property="twitter:image" content="https://i.postimg.cc/mZ5CjB6B/lp-desarrollo-web-modal-js.png">
 </head>
 
-<body>
-  <h1>Desarrollo Web & Elliot Garamendi</h1>
+<body class="body">
+  <header class="header">
+    <nav class="header-nav">
+      <div class="header-nav-container">
+        <a href="#" class="header-nav__logo-container">
+          <img src="./img/logo-elliot-garamendi.jpg" alt="Logo Web" class="header-nav__logo" />
+        </a>
+        <button class="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" class="header-nav__menu-icon">
+            <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
+          </svg>
+        </button>
+        <ul class="header-nav__link-list">
+          <li class="header-nav__link-item">
+            <a href="#desarrolloWeb" class="header-nav__link">Desarrollo Web</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#portafolio" class="header-nav__link">Portafolio</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#casosExito" class="header-nav__link">Casos de éxito</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#metodologia" class="header-nav__link">Metodología</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#planes" class="header-nav__link">Planes</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#contacto" class="header-nav__link">Contacto</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="https://www.linkedin.com/in/elliotgaramendi/" class="header-nav__link header-nav__link--active"
+              target="_blank">Elliot</a>
+          </li>
+          <li class="header-nav__link-item header-nav__link-item--close-icon-container"
+            id="headerNavCloseIconContainer">
+            <img src="./img/close.svg" alt="Ícono de cierre de menú" class="header-nav__close-icon" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="hero" id="desarrolloWeb">
+      <div class="hero-container">
+        <div class="hero__message">
+          <h1 class="hero__message-title">
+            Diseño y Desarrollo de Páginas Web
+          </h1>
+          <h2 class="hero__message-subtitle">
+            Los mejores en Diseño y Desarrollo de páginas Web en Perú.
+          </h2>
+          <button class="hero__message-button" id="heroMessageButton">
+            Contáctenos
+          </button>
+        </div>
+        <div class="hero__hero-illustration">
+          <figure class="hero__illustration-container">
+            <img src="./img/hero.svg" alt="Imagen de portada" class="hero__illustration" />
+          </figure>
+        </div>
+      </div>
+      <figure class="hero__wave-container">
+        <img src="./img/wave.svg" alt="Wave de separación" class="hero__wave" />
+      </figure>
+    </article>
+
+    <section class="section" id="portafolio">Portafolio</section>
+    <section class="section" id="casosExito">Casos de éxito</a></section>
+    <section class="section" id="metodologia">Metodología</section>
+    <section class="section" id="planes">Planes</section>
+    <section class="section" id="contacto">Contacto</section>
+  </main>
+
+  <section class="modal" id="modal">
+    <div class="modal-container">
+      <figure class="modal__image-container">
+        <img src="./img/desarrollo-web.png" alt="Imagen de desarrollo web" class="modal__image">
+      </figure>
+      <h2 class="modal__title">Hagamos realidad ese sueño que tienes en mente</h2>
+      <h3 class="modal__subtitle">Lleva tu negocio al siguiente nivel</h3>
+      <p class="modal__paragraph">Cuéntanos qué necesitas, nos pondremos en contacto contigo en breve.</p>
+      <button class="modal__button" id="modalButton">Cerrar Modal</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <nav class="footer-nav">
+      <div class="footer-nav-container">
+        <ul class="footer-nav__link-list">
+          <li class="footer-nav__link-item">
+            <a href="https://www.linkedin.com/in/elliotgaramendi/" class="footer-nav__link">
+              <img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="LinkedIn" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://www.instagram.com/elliotgaramendi/" class="footer-nav__link">
+              <img src="https://i.postimg.cc/sfJtqS4W/instagram.png" alt="Instagram" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://www.facebook.com/elliotgaramendi" class="footer-nav__link">
+              <img src="https://i.postimg.cc/7YHyZXZX/facebook.png" alt="Facebook" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://github.com/ElliotXLeo" class="footer-nav__link">
+              <img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="GitHub" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://www.youtube.com/channel/UCE9whBrtYnLWrpzwk6z_JUA" class="footer-nav__link">
+              <img src="https://i.postimg.cc/dtPYcvbM/youtube.png" alt="YouTube" class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://nextjs-react-portafolio-fc.vercel.app" class="footer-nav__link">
+              <img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Página Personal"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+        </ul>
+        <h2 class="footer-nav__credits">
+          🦄Copyright &copy; 2022
+          <a href="#perfil" class="footer-nav__credits-author">Elliot Garamendi.
+          </a>
+          Todos los derechos reservados.🦄
+        </h2>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>
